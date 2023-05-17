@@ -103,7 +103,7 @@ class App:
             self.account_entry.delete(0, 'end')  # clear the entry field
         else:
             messagebox.showerror('Error', 'User not found')
-            # ... (get the current user, create a new BankAccount, and add it to the user)
+            # get the current user, create a new BankAccount, and add it to the user
 
     def deposit(self):
         user_name = self.user_entry.get()
@@ -120,7 +120,7 @@ class App:
                 messagebox.showerror('Error', 'Account not found')
         else:
             messagebox.showerror('Error', 'User not found')
-                # ... (get the current user and account, and deposit the entered amount)
+                # get the current user and account, and deposit the entered amount
 
     def withdraw(self):
         user_name = self.user_entry.get()
@@ -154,7 +154,7 @@ class App:
                 messagebox.showerror('Error', 'Account not found')
         else:
             messagebox.showerror('Error', 'User not found')
-                # ... (get the current user and account, and display the balance)
+                # get the current user and account, and display the balance
 
 def main_console():
     users = []
